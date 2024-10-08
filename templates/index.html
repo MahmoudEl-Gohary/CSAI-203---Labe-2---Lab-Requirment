@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index_style.css') }}">
+</head>
+<body>
+    <h1>User Input Form</h1>
+    <form action="/submit" method="POST">
+        <label for="name">Enter your name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="age">Enter your age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
